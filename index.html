@@ -3,239 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글로우서울 해외진출 보도자료 | GLOWSEOUL Press Release</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <title>GLOW SEOUL | 2026 Global Expansion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #1a1a1a;
-            --secondary: #2c5f8d;
-            --accent: #d4a574;
-            --bg-light: #fafafa;
-            --bg-white: #ffffff;
-            --text-primary: #1a1a1a;
-            --text-secondary: #555555;
-            --border: #e0e0e0;
-            --highlight: #fff4e6;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        :root {
+            --black: #000000;
+            --dark-gray: #1a1a1a;
+            --medium-gray: #666666;
+            --light-gray: #e5e5e5;
+            --lighter-gray: #f5f5f5;
+            --white: #ffffff;
+        }
+
         body {
-            font-family: 'Noto Sans KR', sans-serif;
-            line-height: 1.8;
-            color: var(--text-primary);
-            background: var(--bg-light);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--dark-gray);
+            line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 920px;
+            max-width: 1000px;
             margin: 0 auto;
-            background: var(--bg-white);
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
         }
 
-        /* Header Section */
-        .header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
-            padding: 48px 60px;
-            border-bottom: 4px solid var(--accent);
+        /* Header */
+        header {
+            background: var(--black);
+            padding: 80px 60px;
             position: relative;
-            overflow: hidden;
         }
 
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            transform: translate(30%, -30%);
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
         }
 
-        .header-badge {
-            display: inline-block;
-            background: var(--bg-white);
-            color: var(--primary);
-            padding: 8px 20px;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
+        .logo img {
+            height: 28px;
+            filter: brightness(0) invert(1);
+        }
+
+        .press-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .header-content h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            font-weight: 300;
+            line-height: 1.3;
+            color: var(--white);
             margin-bottom: 24px;
-            border-radius: 2px;
+            letter-spacing: -0.5px;
         }
 
-        .meta-info {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 12px 24px;
-            margin-bottom: 32px;
-            font-size: 14px;
+        .header-content .subtitle {
+            font-size: 15px;
+            font-weight: 300;
             color: rgba(255, 255, 255, 0.7);
-        }
-
-        .meta-label {
-            font-weight: 700;
-            color: var(--accent);
-        }
-
-        .meta-value {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .main-title {
-            font-size: 36px;
-            font-weight: 900;
-            line-height: 1.4;
-            color: var(--bg-white);
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .subtitle {
-            font-size: 16px;
-            font-weight: 400;
             line-height: 1.6;
-            color: rgba(255, 255, 255, 0.85);
-            font-style: italic;
-            border-left: 3px solid var(--accent);
-            padding-left: 20px;
+            max-width: 700px;
+            letter-spacing: 0.3px;
         }
 
-        /* Content Section */
-        .content {
-            padding: 60px;
+        /* Main Content */
+        main {
+            background: var(--white);
         }
 
-        .intro {
+        .intro-section {
+            padding: 80px 60px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .intro-text {
             font-size: 17px;
-            line-height: 2;
+            line-height: 1.8;
+            color: var(--dark-gray);
             margin-bottom: 48px;
-            padding: 32px;
-            background: var(--bg-light);
-            border-left: 4px solid var(--secondary);
             font-weight: 400;
         }
 
+        .company-context {
+            background: var(--lighter-gray);
+            padding: 40px 48px;
+            border-left: 3px solid var(--black);
+            margin: 48px 0;
+        }
+
+        .company-context p {
+            font-size: 15px;
+            line-height: 1.9;
+            color: var(--dark-gray);
+        }
+
+        .company-context strong {
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        .data-highlight {
+            display: inline-block;
+            background: var(--black);
+            color: var(--white);
+            padding: 2px 10px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 2px;
+            margin: 0 3px;
+        }
+
+        /* Sections */
         .section {
-            margin-bottom: 56px;
+            padding: 80px 60px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .section:last-of-type {
+            border-bottom: none;
         }
 
         .section-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 24px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid var(--primary);
-            display: flex;
-            align-items: center;
-        }
-
-        .section-title::before {
-            content: '';
-            width: 6px;
-            height: 28px;
-            background: var(--accent);
-            margin-right: 16px;
-            border-radius: 3px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: var(--black);
+            letter-spacing: -0.3px;
         }
 
         .section-content {
-            font-size: 16px;
-            line-height: 2;
-            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.9;
+            color: var(--medium-gray);
         }
 
         .section-content p {
-            margin-bottom: 24px;
+            margin-bottom: 28px;
         }
 
-        .highlight-box {
-            background: var(--highlight);
-            border-left: 4px solid var(--accent);
-            padding: 24px 28px;
-            margin: 32px 0;
-            font-style: italic;
-            font-size: 15px;
-            line-height: 1.9;
-            color: var(--text-primary);
+        /* Quote Box */
+        .quote-box {
+            background: var(--black);
+            color: var(--white);
+            padding: 48px 56px;
+            margin: 48px 0;
             position: relative;
         }
 
-        .highlight-box::before {
+        .quote-box::before {
             content: '"';
-            font-family: 'Playfair Display', serif;
-            font-size: 72px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 120px;
             position: absolute;
-            top: -12px;
-            left: 16px;
-            color: var(--accent);
-            opacity: 0.3;
+            top: 20px;
+            left: 20px;
+            opacity: 0.15;
+            line-height: 1;
+        }
+
+        .quote-box p {
+            font-size: 15px;
+            line-height: 1.8;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 24px;
+        }
+
+        .quote-author {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-top: 24px;
+        }
+
+        /* Comparison Grid */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            background: var(--black);
+            margin: 48px 0;
+        }
+
+        .comparison-item {
+            background: var(--white);
+            padding: 40px;
+        }
+
+        .comparison-item:last-child {
+            background: var(--lighter-gray);
+        }
+
+        .comparison-label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            color: var(--medium-gray);
+        }
+
+        .comparison-content {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--dark-gray);
         }
 
         /* Timeline Table */
-        .timeline-wrapper {
-            margin: 40px 0;
-            overflow-x: auto;
+        .timeline-section {
+            margin: 60px 0;
         }
 
         .timeline-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-        }
-
-        .timeline-title::before {
-            content: '▼';
-            margin-right: 12px;
-            color: var(--accent);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            color: var(--black);
         }
 
         table {
             width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            background: var(--bg-white);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-collapse: collapse;
+            border: 1px solid var(--light-gray);
         }
 
         thead {
-            background: var(--primary);
-            color: var(--bg-white);
+            background: var(--black);
+            color: var(--white);
         }
 
         th {
-            padding: 18px 20px;
+            padding: 20px 24px;
             text-align: left;
-            font-weight: 700;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-            border-bottom: 2px solid var(--accent);
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         td {
-            padding: 18px 20px;
-            border-bottom: 1px solid var(--border);
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--light-gray);
             font-size: 15px;
+            color: var(--dark-gray);
         }
 
         tbody tr:hover {
-            background: var(--bg-light);
-            transition: background 0.2s ease;
+            background: var(--lighter-gray);
+            transition: background 0.2s;
         }
 
         tbody tr:last-child td {
@@ -244,67 +278,56 @@
 
         .table-note {
             font-size: 13px;
-            color: var(--text-secondary);
-            margin-top: 12px;
+            color: var(--medium-gray);
+            margin-top: 16px;
             font-style: italic;
-            padding-left: 12px;
         }
 
-        /* Company Info Section */
-        .company-section {
-            background: var(--bg-light);
-            padding: 40px;
-            margin-top: 60px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
+        /* Company Info */
+        .company-info {
+            background: var(--lighter-gray);
+            padding: 80px 60px;
         }
 
-        .company-title {
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 28px;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-        }
-
-        .company-title::before {
-            content: '■';
-            margin-right: 12px;
-            color: var(--secondary);
+        .company-info-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 32px;
+            color: var(--black);
         }
 
         .company-description {
             font-size: 15px;
-            line-height: 2;
-            margin-bottom: 32px;
-            color: var(--text-secondary);
+            line-height: 1.9;
+            color: var(--medium-gray);
+            margin-bottom: 48px;
         }
 
         .info-grid {
             display: grid;
-            grid-template-columns: 180px 1fr;
-            gap: 16px;
-            background: var(--bg-white);
-            padding: 28px;
-            border-radius: 6px;
-            border: 1px solid var(--border);
+            grid-template-columns: 200px 1fr;
+            gap: 20px 40px;
+            background: var(--white);
+            padding: 40px;
+            border: 1px solid var(--light-gray);
         }
 
         .info-label {
-            font-weight: 700;
-            color: var(--primary);
-            font-size: 14px;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: var(--black);
+            padding: 12px 0;
+            border-bottom: 1px solid var(--light-gray);
         }
 
         .info-value {
-            color: var(--text-secondary);
-            font-size: 14px;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border);
+            font-size: 15px;
             line-height: 1.8;
+            color: var(--medium-gray);
+            padding: 12px 0;
+            border-bottom: 1px solid var(--light-gray);
         }
 
         .info-label:last-of-type,
@@ -312,43 +335,70 @@
             border-bottom: none;
         }
 
-        /* Divider */
+        /* Footer */
+        footer {
+            background: var(--black);
+            padding: 60px;
+            text-align: center;
+        }
+
+        footer img {
+            height: 28px;
+            opacity: 0.8;
+            filter: brightness(0) invert(1);
+        }
+
         .divider {
             height: 1px;
-            background: linear-gradient(to right, transparent, var(--border), transparent);
-            margin: 48px 0;
+            background: var(--light-gray);
+            margin: 60px 0;
         }
 
         .end-marker {
             text-align: center;
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--text-secondary);
-            margin: 48px 0;
-            letter-spacing: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: var(--medium-gray);
+            margin: 60px 0;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .container {
-                box-shadow: none;
+            header {
+                padding: 60px 32px;
             }
 
-            .header, .content {
-                padding: 32px 24px;
+            .header-top {
+                margin-bottom: 40px;
             }
 
-            .main-title {
-                font-size: 28px;
+            .press-label {
+                font-size: 10px;
+            }
+
+            .header-content h1 {
+                font-size: 30px;
+            }
+
+            .intro-section,
+            .section,
+            .company-info {
+                padding: 60px 32px;
             }
 
             .section-title {
-                font-size: 20px;
+                font-size: 22px;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
             }
 
             .info-grid {
                 grid-template-columns: 1fr;
-                gap: 8px;
+                gap: 12px;
+                padding: 32px;
             }
 
             .info-label {
@@ -361,26 +411,27 @@
             }
 
             table {
-                font-size: 13px;
+                font-size: 14px;
             }
 
             th, td {
-                padding: 12px 14px;
+                padding: 16px;
+            }
+
+            footer {
+                padding: 48px 32px;
             }
         }
 
-        /* Print Styles */
         @media print {
-            body {
-                background: white;
+            header {
+                background: var(--black);
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
             }
 
-            .container {
-                box-shadow: none;
-            }
-
-            .header {
-                background: #1a1a1a;
+            .quote-box {
+                background: var(--black);
                 print-color-adjust: exact;
                 -webkit-print-color-adjust: exact;
             }
@@ -390,62 +441,89 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <div class="header">
-            <div class="header-badge">보 도 자 료 | PRESS RELEASE</div>
-            <div class="meta-info">
-                <div class="meta-label">배포일시</div>
-                <div class="meta-value">2026년 4월 (예정)</div>
-                <div class="meta-label">문의</div>
-                <div class="meta-value">글로우서울 마케팅팀 admin@glowseoul.co.kr</div>
+        <header>
+            <div class="header-top">
+                <div class="logo">
+                    <img src="glow-seoul-logo.png" alt="GLOW SEOUL">
+                </div>
+                <div class="press-label">PRESS RELEASE</div>
             </div>
-            <h1 class="main-title">글로우서울, 2026년 신규 5개국 포함<br>7개국 동시 전개</h1>
-            <div class="subtitle">운영 중인 매장을 '쇼룸'으로 삼아 중동·미주까지, '브랜드 경험 수출' 본격화</div>
-        </div>
+            <div class="header-content">
+                <h1>글로우서울, 2026년 신규 5개국 포함<br>7개국 동시 전개</h1>
+                <p class="subtitle">운영 중인 매장을 '쇼룸'으로 삼아 중동·미주까지, '브랜드 경험 수출' 본격화</p>
+            </div>
+        </header>
 
-        <!-- Content -->
-        <div class="content">
-            <!-- Introduction -->
-            <div class="intro">
-                브랜드 공간 전문 기업 글로우서울(Glowseoul)은 2026년 카타르·사우디아라비아·대만·필리핀·태국 등 신규 5개국에 진출하고, 기존 싱가포르·미국을 포함해 총 7개국에서 F&B 매장을 동시 전개한다. 글로우서울은 레시피·로고 중심의 전통 프랜차이즈를 넘어, 공간 설계·운영 노하우·콘텐츠까지 패키지로 이전하는 '브랜드 경험 수출' 모델을 통해 아시아를 넘어 중동·미주까지 확장 반경을 넓힌다.
-            </div>
+        <!-- Main Content -->
+        <main>
+            <!-- Intro Section -->
+            <section class="intro-section">
+                <p class="intro-text">
+                    브랜드 공간 전문 기업 글로우서울(Glowseoul)은 2026년 카타르·사우디아라비아·대만·필리핀·태국 등 신규 5개국에 진출하고, 기존 싱가포르·미국을 포함해 총 7개국에서 F&B 매장을 동시 전개한다. 글로우서울은 레시피·로고 중심의 전통 프랜차이즈를 넘어, 공간 설계·운영 노하우·콘텐츠까지 패키지로 이전하는 '브랜드 경험 수출' 모델을 통해 아시아를 넘어 중동·미주까지 확장 반경을 넓힌다.
+                </p>
+
+                <div class="company-context">
+                    <p>
+                        <strong>글로우서울은 Standard Bread, 청수당, 온천집, Rain Report, ETF 등 5개 F&B 브랜드를 직접 운영하며, 기획·디자인·영상·시공·마케팅·운영까지 브랜딩 전 과정을 인하우스로 수행하는 브랜드 공간 전문 기업이다.</strong> 현재 국내 <span class="data-highlight">000개</span> 매장을 운영 중이며, 해외에는 <span class="data-highlight">000개</span> 매장을 전개하고 있다. 2026년 말까지 총 <span class="data-highlight">000개</span> 매장으로 확대할 계획이다. 롯데 프리미엄 아울렛 타임빌라스, 인스파이어 리조트 '오아시스 고메 빌리지', 스타필드 수원 등 대형 상업공간 설계 실적을 보유하고 있으며, 자체 F&B 브랜드 운영 노하우와 공간 기획력을 결합해 해외 시장에 토털 솔루션을 공급한다.
+                    </p>
+                </div>
+            </section>
 
             <!-- Section 1 -->
-            <div class="section">
+            <section class="section">
                 <h2 class="section-title">한국 매장이 곧 제안서 — 현장 체험형 파트너십 모델</h2>
                 <div class="section-content">
                     <p>글로우서울의 해외 전략은 파트너사가 먼저 사업화를 제안하는 '공간 경험 선(先)체험 후(後)확장' 모델로 요약된다. 국내에서 브랜드 공간·메뉴·소비자 반응을 철저히 검증한 뒤, 해당 매장 자체를 해외 파트너에게 보여주는 '살아있는 쇼룸'으로 활용하는 방식이다.</p>
 
-                    <p>성수·도산·해운대 등 국내 주요 거점의 Standard Bread, 레인리포트, 청수당, ETF 매장에는 해외 사업자들의 방문이 이어지고 있으며, 직접 보고·먹고·경험한 파트너가 먼저 사업화를 제안하는 구조가 만들어졌다. 가장 최근 런칭한 ETF는 국내 오픈 직후 복수 국가 사업자로부터 마스터프랜차이즈 문의가 접수돼 쇼룸 전략의 유효성을 다시 한번 확인했다.</p>
+                    <p>성수·도산·해운대 등 국내 주요 거점의 Standard Bread, 레인리포트, 청수당, ETF 매장에는 해외 사업자들의 방문이 이어지고 있으며, 직접 보고·먹고·경험한 파트너가 먼저 사업화를 제안하는 구조가 만들어졌다. 가장 최근 런칭한 ETF는 국내 오픈 직후 <span class="data-highlight">000개국</span> 사업자로부터 마스터프랜차이즈 문의가 접수돼 쇼룸 전략의 유효성을 다시 한번 확인했다.</p>
                 </div>
 
-                <div class="highlight-box">
-                    (예시) 우리는 해외 파트너사에 PT 자료 발송 대신 한국 매장으로 초대합니다. 공간을 직접 경험한 파트너가 먼저 연락해 오는 구조가 글로우서울의 가장 강력한 영업 방식입니다.<br><br>
-                    <strong>— 글로우서울 (대표님 코멘트 인용)</strong>
+                <div class="quote-box">
+                    <p>우리는 해외 파트너사에 PT 자료를 발송하는 대신 한국 매장으로 초대합니다. 공간을 직접 경험한 파트너가 먼저 연락해 오는 구조가 글로우서울의 가장 강력한 영업 방식입니다. 이는 단순 프랜차이즈 계약이 아닌, 브랜드 경험 전체를 이전하는 파트너십이기에 가능한 모델입니다.</p>
+                    <div class="quote-author">— 글로우서울 대표</div>
                 </div>
-            </div>
+            </section>
 
             <!-- Section 2 -->
-            <div class="section">
+            <section class="section">
                 <h2 class="section-title">해외 진출 5개 브랜드, 5개의 공간 언어 — 상권·국가별 맞춤 확장</h2>
                 <div class="section-content">
                     <p>글로우서울은 공간 언어가 뚜렷한 5개 F&B 브랜드를 해외로 전개한다. Standard Bread는 '갓 구워낸 빵의 신선함을 앞세운 베이커리 쇼룸', 청수당은 '정원의 미학을 현대적으로 재해석한 프리미엄 디저트 카페', Rain Report는 '비 오는 날의 무드를 상시 구현한 로스터리 카페', 온천집은 '온천 테마로 풀어낸 샤브·스키야키 다이닝', ETF 베이커리는 '대중이 선호하는 메뉴를 엄선해 매일 부담 없이 즐길 수 있도록 문턱을 낮춘 보편적 미식 공간'으로 각기 다른 경험을 제안한다.</p>
 
                     <p>이러한 구성은 국가·상권·소비층에 따라 가장 적합한 브랜드를 선별해 투입할 수 있음을 의미한다. 한 브랜드의 리스크가 전체 포트폴리오로 전이되지 않는 분산 구조이기도 하다.</p>
                 </div>
-            </div>
+            </section>
 
             <!-- Section 3 -->
-            <div class="section">
+            <section class="section">
                 <h2 class="section-title">브랜딩 A to Z 인하우스 — '원스톱 솔루션'</h2>
                 <div class="section-content">
                     <p>글로우서울이 해외 파트너에게 이전하는 것은 브랜드 로고와 레시피만이 아니다. 기획·디자인·영상·시공·콘텐츠·마케팅·운영 노하우를 인하우스에서 일괄 보유하고 있어, 공간 설계부터 고객 경험 설계까지 패키지로 전달할 수 있다. 이는 단순 레시피 라이선스 기반 프랜차이즈와 글로우서울 모델을 구별하는 핵심이다.</p>
+                </div>
 
+                <div class="comparison-grid">
+                    <div class="comparison-item">
+                        <div class="comparison-label">전통 프랜차이즈</div>
+                        <div class="comparison-content">
+                            레시피 + 로고 라이선스 제공<br>
+                            공간은 가맹점주 재량
+                        </div>
+                    </div>
+                    <div class="comparison-item">
+                        <div class="comparison-label">글로우서울 모델</div>
+                        <div class="comparison-content">
+                            공간 설계 + 인테리어 시공 + 운영 매뉴얼 + 콘텐츠 마케팅까지 토털 패키지
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-content">
                     <p>해외 전개 방식도 지역 특성에 맞춰 투트랙(Two-Track)으로 운영된다. 미국은 직영점 위주로 브랜드 품질과 공간 경험을 직접 관리하고, 중동·아시아는 마스터프랜차이즈(MF) 등 현지 최적화된 파트너십을 통해 파트너의 시장 실행력과 글로우서울의 브랜드 역량을 결합한 동반 성장을 도모한다.</p>
                 </div>
-            </div>
+            </section>
 
             <!-- Section 4 -->
-            <div class="section">
+            <section class="section">
                 <h2 class="section-title">아시아를 넘어 중동·미주로 — 2026 확장 로드맵</h2>
                 <div class="section-content">
                     <p>2026년 글로우서울의 확장 지도는 아시아(싱가포르·대만·필리핀·태국)에서 중동(카타르·사우디아라비아)까지 공격적으로 확장된다. 특히 높은 구매력과 프리미엄 외식 수요를 갖춘 중동 시장은 글로우서울의 고감도 공간 브랜드가 진입하기에 중요한 전략 거점으로 평가된다.</p>
@@ -453,8 +531,7 @@
                     <p>글로벌 핵심 시장인 미국에서는 뉴저지 청수당과 뉴욕 온천집을 직영으로 안착시키며 K 공간 콘텐츠의 독보적인 경쟁력을 입증했다. 연내 오픈을 앞둔 보스턴 청수당 2호점 또한 현지 매체의 집중 조명을 받고 있어, 글로우서울의 브랜드 경험이 북미 시장에서도 강력한 비즈니스 모델임을 다시 한번 실증하고 있다.</p>
                 </div>
 
-                <!-- Timeline Table -->
-                <div class="timeline-wrapper">
+                <div class="timeline-section">
                     <div class="timeline-title">2026년 해외 오픈 타임라인</div>
                     <table>
                         <thead>
@@ -504,16 +581,16 @@
                     </table>
                     <div class="table-note">※ 일정 및 브랜드 상세는 변경될 수 있으며, 확정 시 별도 보도자료로 안내 예정.</div>
                 </div>
-            </div>
+            </section>
 
-            <div class="end-marker">— 이 하 —</div>
+            <div class="end-marker">—</div>
 
             <!-- Company Info -->
-            <div class="company-section">
-                <h2 class="company-title">글로우서울(Glowseoul) 개요</h2>
-                <div class="company-description">
+            <div class="company-info">
+                <h2 class="company-info-title">글로우서울 (Glowseoul) 개요</h2>
+                <p class="company-description">
                     글로우서울은 기획·디자인·영상·미술·시공·콘텐츠·마케팅·운영에 이르는 브랜딩 전 과정을 인하우스에서 수행하는 브랜드 공간 전문 기업이다. 익선동·창신동 도시재생 프로젝트를 시작으로, 롯데 프리미엄 아울렛 타임빌라스, 스타필드 수원, 인스파이어 리조트 '오아시스 고메 빌리지', 올림픽파크 포레온 스카이 라운지 등 대형 상업공간 설계 실적을 보유했으며, SBS '동네멋집' 시즌 1·2에 공식 참여했다. 자체 개발한 F&B 브랜드와 공간 기획력을 결합해 해외 시장에 토털 공간 솔루션을 공급하며, 전 세계에 K-브랜드 공간의 실질적인 비즈니스 경쟁력을 입증하고 있다.
-                </div>
+                </p>
 
                 <div class="info-grid">
                     <div class="info-label">회사명</div>
@@ -525,6 +602,9 @@
                     <div class="info-label">해외 진출 주요브랜드</div>
                     <div class="info-value">Standard Bread · 청수당 · 온천집 · Rain Report · ETF</div>
 
+                    <div class="info-label">운영 매장 현황</div>
+                    <div class="info-value">국내 <span class="data-highlight">000개</span> / 해외 <span class="data-highlight">000개</span> (2026년 목표: 총 <span class="data-highlight">000개</span>)</div>
+
                     <div class="info-label">해외 전개</div>
                     <div class="info-value">7개국 (싱가포르·미국·카타르·대만·필리핀·사우디아라비아·태국) — 2026년 기준</div>
 
@@ -535,7 +615,12 @@
                     <div class="info-value">타임빌라스 · 스타필드 수원 · 인스파이어 리조트 '오아시스 고메 빌리지' · 올림픽파크 포레온 스카이 라운지 등</div>
                 </div>
             </div>
-        </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <img src="glow-seoul-logo.png" alt="GLOW SEOUL">
+        </footer>
     </div>
 </body>
 </html>
